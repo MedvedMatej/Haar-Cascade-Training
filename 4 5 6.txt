@@ -1,8 +1,8 @@
 Step 4:
-vc15\bin\opencv_annotation.exe --annotations=pos.txt --images=PosS/
+C:\[your_path_here]\opencv\build\x64\vc15\bin\opencv_annotation.exe --annotations=pos.txt --images=PosS/
 
 Step 5:
-vc15\bin\opencv_createsamples.exe -info pos.txt -w 24 -h 24 -num 1000 -vec pos.vec
+C:\[your_path_here]\opencv\build\x64\vc15\bin\opencv_createsamples.exe -info pos.txt -w 24 -h 24 -num 1000 -vec pos.vec
 
 Step 6:
-vc15\bin\opencv_traincascade.exe -data Training/ -vec pos.vec -bg neg.txt -precalcValBufSize 6000 -precalcIdxBufSize 6000 -numPos 430 -numNeg 1600 -numStages 10 -w 24 -h 24 -maxFalseAlarmRate 0.4 -minHitRate 0.999
+C:\[your_path_here]\opencv\build\x64\vc15\bin\opencv_traincascade.exe -data Training/ -vec pos.vec -bg neg.txt -precalcValBufSize 6000 -precalcIdxBufSize 6000 -numPos 430 -numNeg 1600 -numStages 10 -w 24 -h 24
